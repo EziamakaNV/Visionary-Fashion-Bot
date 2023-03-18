@@ -15,6 +15,7 @@ const OPENAI_API_URL = "https://api.openai.com/v1/chat/completions";
 const app = express();
 app.use(bodyParser.json());
 
+app.use('/health', (req, res) => { res.status(200).send('OK'); });
 app.post("/webhook", async (req, res) => {
     console.log(req.body);
   const chatId = req.body.message.chat.id;
