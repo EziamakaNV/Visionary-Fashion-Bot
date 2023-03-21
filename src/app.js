@@ -57,7 +57,7 @@ app.post("/webhook", async (req, res) => {
 async function generateChatGptResponse(userQuery) {
     
     const prompt = `You are a beauty expert chatbot specialized in providing advice on makeup and outfits for people with color blindness. Your suggestions consider their specific color vision deficiencies and recommend colors and combinations they can see.
-    Please suggest makeup and an outfit for an ideal summer day. Provide the suggestions in the following format:
+    . Provide the suggestions in the following format:
 
 Makeup:
 1. [Item 1]: [Description]
